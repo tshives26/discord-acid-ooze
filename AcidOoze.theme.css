@@ -1,0 +1,159 @@
+/**
+ * @name Acid Ooze
+ * @author SummitByte
+ * @version 1.0.0
+ * @description A dark, toxic acid and ooze-themed theme with vibrant greens, yellows, and slimy effects. Clean design with toxic embellishments.
+ * @source https://github.com/tshives26/discord-acid-ooze
+ * @website https://github.com/tshives26/discord-acid-ooze
+ */
+
+/* IMPORT CSS - Acid Ooze Framework */
+@import url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/main.css");
+@import url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/betterdiscord.css");
+
+/* SETTINGS - ACID OOZE CUSTOMIZATION */
+:root {
+  /* ACCENT COLORS - Toxic Acid Palette */
+  --main-color: #39ff14; /* Neon Lime Green - main accent color [default: #39ff14] */
+  --hover-color: #66ff00; /* Bright Acid Green - hover accent color [default: #66ff00] */
+  --success-color: #00ff41; /* Toxic Green - positive accent color [default: #00ff41] */
+  --danger-color: #ff4500; /* Toxic Orange - danger accent color [default: #ff4500] */
+  
+  /* STATUS COLORS - Toxic Variants */
+  --online-color: #39ff14; /* Neon Lime Green [default: #39ff14] */
+  --idle-color: #ffff00; /* Toxic Yellow [default: #ffff00] */
+  --dnd-color: #ff4500; /* Toxic Orange [default: #ff4500] */
+  --streaming-color: #7cfc00; /* Lawn Green [default: #7cfc00] */
+  --offline-color: #556b2f; /* Dark Olive Green [default: #556b2f] */
+  
+  /* APP BACKGROUND - Acid Ooze Gradient */
+  --background-shading-percent: 100%; /* app background shading amount [default: 100%] */
+  --background-image: url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/assets/background-main.jpg"); /* app background image (link must be HTTPS) */
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: saturate(1.4) brightness(0.8) contrast(1.3); /* toxic filter effects */
+  
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/assets/background-main.jpg"); /* user popout background image [default: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size [default: var(--background-size)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments [default: var(--background-filter)] */
+  
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/assets/background-main.jpg"); /* user modal background image [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size [default: var(--background-size)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments [default: var(--background-filter)] */
+  
+  /* HOME ICON - Animated Acid Ooze GIF */
+  --home-icon: url("https://raw.githubusercontent.com/tshives26/discord-acid-ooze/main/assets/home-icon.gif"); /* home button animated icon - toxic acid effect [default: animated GIF] */
+  --home-size: cover; /* home button icon size [default: cover] */
+  
+  /* FONTS */
+  --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
+  --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+}
+
+/* THEME VARIANTS - Users can switch in Discord Settings > Appearance > Theme */
+/* LIGHT THEME - Acid Ooze (Brighter variant) */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(252, 252, 252, 0.5)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
+}
+
+/* DARK THEME - Acid Ooze (Standard Dark) */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.75); /* app background shading color - dark toxic effect [default: rgba(0, 0, 0, 0.75)] */
+  --card-shading: rgba(0, 0, 0, 0.6); /* cards background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --popout-shading: rgba(0, 0, 0, 0.85); /* popouts background shading color [default: rgba(0, 0, 0, 0.85)] */
+  --modal-shading: rgba(0, 0, 0, 0.8); /* modals background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --input-shading: rgba(0, 0, 0, 0.65); /* inputs background shading color [default: rgba(0, 0, 0, 0.65)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.75); /* muted text color [default: rgba(255, 255, 255, 0.75)] */
+}
+
+/* DARKER THEME - Deep Acid Ooze */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.88); /* app background shading color - deep toxic [default: rgba(0, 0, 0, 0.88)] */
+  --card-shading: rgba(0, 0, 0, 0.7); /* cards background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --popout-shading: rgba(0, 0, 0, 0.92); /* popouts background shading color [default: rgba(0, 0, 0, 0.92)] */
+  --modal-shading: rgba(0, 0, 0, 0.88); /* modals background shading color [default: rgba(0, 0, 0, 0.88)] */
+  --input-shading: rgba(0, 0, 0, 0.75); /* inputs background shading color [default: rgba(0, 0, 0, 0.75)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.8); /* muted text color [default: rgba(255, 255, 255, 0.8)] */
+}
+
+/* MIDNIGHT THEME - Ultra Dark Acid Ooze */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.95); /* app background shading color - ultra dark toxic [default: rgba(0, 0, 0, 0.95)] */
+  --card-shading: rgba(0, 0, 0, 0.8); /* cards background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --popout-shading: rgba(0, 0, 0, 0.98); /* popouts background shading color [default: rgba(0, 0, 0, 0.98)] */
+  --modal-shading: rgba(0, 0, 0, 0.95); /* modals background shading color [default: rgba(0, 0, 0, 0.95)] */
+  --input-shading: rgba(0, 0, 0, 0.85); /* inputs background shading color [default: rgba(0, 0, 0, 0.85)] */
+  --normal-text: #ffffff; /* text color - bright for readability [default: #ffffff] */
+  --muted-text: rgba(255, 255, 255, 0.85); /* muted text color [default: rgba(255, 255, 255, 0.85)] */
+}
+
+/* ADDITIONAL ACID OOZE CSS - Enhanced toxic effects */
+/* Glowing text effects for selected elements */
+[class*="modeSelected"] {
+  text-shadow: 0 0 8px var(--main-color), 0 0 12px var(--main-color);
+}
+
+/* Enhanced glow on hover for toxic elements */
+[class*="button"]:hover,
+[class*="interactive"]:hover {
+  box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Toxic drip effect on channel list dividers */
+[class*="divider"]::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    var(--main-color) 0%, 
+    transparent 50%,
+    var(--main-color) 100%);
+  opacity: 0.6;
+  animation: toxic-drip 3s ease-in-out infinite;
+}
+
+@keyframes toxic-drip {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+/* Acid ooze glow on scrollbar */
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 8px var(--main-color) inset;
+}
+
+/* Enhanced toxic glow on unread indicators */
+[class*="unread"] {
+  box-shadow: 0 0 12px var(--main-color), 0 0 24px var(--main-color);
+}
+
+/* ADD ADDITIONAL ACID OOZE CSS BELOW HERE */

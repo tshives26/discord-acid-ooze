@@ -83,7 +83,7 @@
 
 /* DARK THEME - Acid Ooze (Standard Dark) */
 :is(.theme-dark, .theme-light .theme-dark) {
-  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color - dark toxic effect [default: rgba(0, 0, 0, 0.6)] */
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color - dark toxic effect [default: rgba(0, 0, 0, 0.4)] */
   --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
   --popout-shading: rgba(0, 0, 0, 0.75); /* popouts background shading color [default: rgba(0, 0, 0, 0.75)] */
   --modal-shading: rgba(0, 0, 0, 0.7); /* modals background shading color [default: rgba(0, 0, 0, 0.7)] */
@@ -94,7 +94,7 @@
 
 /* DARKER THEME - Deep Acid Ooze */
 :is(.theme-darker, .theme-light .theme-darker) {
-  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color - deep toxic [default: rgba(0, 0, 0, 0.8)] */
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color - deep toxic [default: rgba(0, 0, 0, 0.6)] */
   --card-shading: rgba(0, 0, 0, 0.5); /* cards background shading color [default: rgba(0, 0, 0, 0.5)] */
   --popout-shading: rgba(0, 0, 0, 0.85); /* popouts background shading color [default: rgba(0, 0, 0, 0.85)] */
   --modal-shading: rgba(0, 0, 0, 0.8); /* modals background shading color [default: rgba(0, 0, 0, 0.8)] */
@@ -105,7 +105,7 @@
 
 /* MIDNIGHT THEME - Ultra Dark Acid Ooze */
 :is(.theme-midnight, .theme-light .theme-midnight) {
-  --background-shading: rgba(0, 0, 0, 0.95); /* app background shading color - ultra dark toxic [default: rgba(0, 0, 0, 0.95)] */
+  --background-shading: rgba(0, 0, 0, 0.75); /* app background shading color - ultra dark toxic [default: rgba(0, 0, 0, 0.75)] */
   --card-shading: rgba(0, 0, 0, 0.8); /* cards background shading color [default: rgba(0, 0, 0, 0.8)] */
   --popout-shading: rgba(0, 0, 0, 0.98); /* popouts background shading color [default: rgba(0, 0, 0, 0.98)] */
   --modal-shading: rgba(0, 0, 0, 0.95); /* modals background shading color [default: rgba(0, 0, 0, 0.95)] */
